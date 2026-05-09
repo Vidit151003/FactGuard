@@ -65,7 +65,7 @@ router.post('/factcheck', upload.single('pdf'), async (req, res) => {
       }
 
       // 15 RPM = one request every 4 seconds. Use 4500ms for safety buffer:
-      await new Promise(r => setTimeout(r, 4500));
+      await new Promise(r => setTimeout(r, 6500));
     }
 
     send({ stage: 'complete', results });

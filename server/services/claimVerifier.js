@@ -15,7 +15,7 @@ const extractionModel = genAI.getGenerativeModel({
 
 // ─── Model for claim VERIFICATION (with Google Search grounding) ─────────────
 const verificationModel = genAI.getGenerativeModel({
-  model: 'gemini-3.1-flash-lite',
+  model: 'gemini-2.5-flash-lite',
   tools: [{ googleSearch: {} }],          // Native Google Search — free tier supported
   generationConfig: {
     temperature: 0.2,
