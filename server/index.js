@@ -5,7 +5,10 @@ import factcheckRouter from './routes/factcheck.js';
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
+  origin: [
+    'https://fact-guard-eight.vercel.app',
+    'http://localhost:5173'
+  ],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
