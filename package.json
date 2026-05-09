@@ -1,0 +1,12 @@
+{
+  "name": "factguard",
+  "scripts": {
+    "install:all": "cd client && npm i && cd ../server && npm i",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
