@@ -11,7 +11,7 @@
 
 | Environment | URL |
 |-------------|-----|
-| **Production** | _coming soon_ |
+| **Production** | fact-guard-eight.vercel.app |
 
 ---
 
